@@ -27,12 +27,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)buttonPress:(id)sender {
-        [self sendNotification:[[NSDate date] dateByAddingTimeInterval:60]];
+        [self sendNotification:[NSDate date]];
 }
 
 -(void) sendNotification: (NSDate *)date {
     
-    UILocalNotification* localNotification = [[UILocalNotification alloc]init];
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = date;
     localNotification.alertBody = @"Check body temperature";
     localNotification.alertAction = @"Show me the item";
