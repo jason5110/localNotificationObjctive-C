@@ -38,7 +38,7 @@
     localNotification.alertAction = @"Show me the item";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.soundName = UILocalNotificationDefaultSoundName;
-    localNotification.repeatInterval = NSCalendarUnitDay;
+    localNotification.repeatInterval = NSCalendarUnitMinute;//NSCalendarUnitDay;
     localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
